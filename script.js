@@ -247,9 +247,9 @@ document.addEventListener("DOMContentLoaded", () => {
       chatMessages.appendChild(loading);
 
       chatMessages.scrollTop = chatMessages.scrollHeight;
-
+const API_URL = "https://ai-portfolio-backend-fl2t.onrender.com/ask";
       try {
-        const response = await fetch("http://127.0.0.1:8000/ask", {
+        const response = await fetch(API_URL  , {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
